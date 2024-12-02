@@ -1,0 +1,38 @@
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background"></div> <!-- Cool background -->
+    <div class="container" id="weatherApp">
+        <h1>Weather Search</h1>
+        <div class="search">
+            <input type="text" id="cityInput" placeholder="Enter city...">
+            <button onclick="searchWeather()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M15.5 14h-.79l-.28-.27a6.471 6.471 0 001.48-5.34C14.82 5.09 12.11 3 9 3S3.18 5.09 2.09 8.39c-.94 3.09 1.16 6.5 4.34 7.44a6.471 6.471 0 005.34-1.48l.27.28v.79l4.25 4.25c.39.39 1.02.39 1.41 0s.39-1.02 0-1.41L15.5 14zM9 14a5 5 0 110-10 5 5 0 010 10z"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="weather-card" id="weatherCard">
+            <h2 id="city">City Name</h2>
+            <p id="temperature">Temperature: -- °C</p>
+            <p id="condition">Condition: --</p>
+            <p id="humidity">Humidity: --%</p>
+            <p id="wind">Wind Speed: -- km/h</p>
+        </div>
+        <!-- GitHub Icon with lighting effect -->
+        <div class="github-link">
+            <a href="https://github.com/ydvbijay44" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" class="github-icon" />
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
